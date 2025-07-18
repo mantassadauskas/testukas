@@ -29,7 +29,7 @@ public class LoginResource {
     @Path("/login")
     public Response login(@Valid LoginRequest request) {
         Optional<String> tokenOpt = authService.authenticate(request.username, request.password);
-        System.out.println("Username input: " + request.username);
+        System.out.println("Username input: " + request.username + request.password);
 
         if (tokenOpt.isPresent()) {
             // Get user info for response
