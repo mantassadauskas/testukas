@@ -94,3 +94,5 @@ curl -X POST http://localhost:8080/orders \
 
 ## Known problems:
 V2__add_two_users migration does not populate users table
+Multiple orders do not work
+Buying only if price and quantity is equal
